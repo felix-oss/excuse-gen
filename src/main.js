@@ -27,10 +27,10 @@ const excuseGenerator = () => {
     "while I was praying"
   ];
 
-  var person = who[Math.floor(Math.random() * (who.length - 1))];
-  var bam = action[Math.floor(Math.random() * (who.length - 1))];
-  var que = what[Math.floor(Math.random() * (who.length - 1))];
-  var time = when[Math.floor(Math.random() * (who.length - 1))];
+  var person = who[Math.floor(Math.random() * who.length)];
+  var bam = action[Math.floor(Math.random() * action.length)];
+  var que = what[Math.floor(Math.random() * what.length)];
+  var time = when[Math.floor(Math.random() * when.length)];
   return person + " " + bam + " " + que + " " + time;
 };
 document.querySelector(
